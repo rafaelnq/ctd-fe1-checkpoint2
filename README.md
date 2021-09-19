@@ -33,4 +33,4 @@ Você provavelmente fez o checkpoint I, então imaginamos este trabalho como uma
 
 - [x] Você tem total liberdade para animar e colorir o seu formulário, então use e abuse da sua criatividade
 
-- [ ] Sua o trabalho no Github e no Gitpages e envie o link pelo formulário a seguir: https://forms.gle/7u3EhnpmPB3yUd3q6
+- [x] Sua o trabalho no Github e no Gitpages e envie o link pelo formulário a seguir: https://forms.gle/7u3EhnpmPB3yUd3q6
