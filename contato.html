@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <link rel="stylesheet" href="./css/contato.css">
+</head>
+<body>
+    <main>
+        <form action="#">
+            <fieldset class="contato">
+                    <legend>Contato</legend>
+                    <div class="nome">                    
+                            <label for="nome">Nome </label>
+                            <input type="text" id="nome" >                   
+                    </div>
+                    <div class="grid email">
+                        <label for="email">Email </label>
+                        <input type="email" id="email" placeholder="Digite seu email">
+                    </div>
+                    <div class="grid telefone">
+                        <label for="telefone">Telefone </label>
+                        <input type="text" id="telefone">
+                    </div>
+            </fieldset>
+
+            <fieldset class="nascimento">
+                <legend>Idade</legend>
+                <div class="grid idade">
+                    <p>Você é de maior ?</p>
+                    <input type="radio" name="idade" id="maior" checked>
+                    <label for="maior">Sim</label>
+                    <input type="radio" name="idade" id="menor">
+                    <label for="menor">Não</label>
+                </div>
+                <div class="grid data">
+                    <label for="data">Data de nascimento</label>
+                    <input type="date" id="data">
+                </div>
+
+            </fieldset>
+
+            <fieldset class="interesse_local">
+                <legend>Ponto de interesse</legend>
+                <div class="grid" >                    
+                    <select name="interesses" id="interesses">
+                        <option value="#">Opcional</option>
+                        <option value="praia_boa_viagem">Praia de Boa Viagem</option>
+                        <option value="recife_antigo">Recife Antigo</option>
+                        <option value="parque_jaqueira">Parque da jaquiera</option>
+                    </select>
+                </div> 
+            </fieldset>
+            <fieldset class="interesse_cidade"> 
+                <legend>Quais seus interesses na cidade ?</legend>
+                <div class="grid lugar">
+                    <div class="opcoes">
+                        <label for="estudante">Estudante</label>
+                        <input type="checkbox" name="estudante" id="estudante">
+                        <label for="turista">Turista</label>
+                        <input type="checkbox" name="turista" id="turista">
+                        <label for="residente">Residente</label>
+                        <input type="checkbox" name="residente" id="residente">
+                    </div>               
+                </div>
+            </fieldset>       
+                <div class="confirmando">
+                    <button class="cadastro" type="submit">Cadastrar</button>
+                    <button  class="cancelar" type="reset">Cancelar</button>
+                </div>
+        </form>
+    </main>
+</body>
+</html>
