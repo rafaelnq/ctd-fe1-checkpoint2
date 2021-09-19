@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Archivo+Black&display=swap');
+
+
+
+*{
+  
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/wallpaper.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    color:  darkkhaki;
+    text-shadow: 0 0 5px black;
+    
+  
+}
+
+
+main{
+    background: linear-gradient( 120deg, #3A78F2 , #F1A11F,#A41FC4);
+    width:800px;
+    padding: 44px 19px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+    
+    
+}
+
+form{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "contato contato contato"
+    "interesse_cidade interesse_cidade interesse_cidade"
+    "nascimento nascimento nascimento"
+    "interesse_local interesse_local interesse_local"
+    "cadastro cadastro cadastro";
+
+    
+}
+
+.contato{
+    grid-area: contato;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+ 
+   
+    
+}
+
+fieldset{
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+legend {
+    min-width: 0px;
+    max-width: 70%;
+    margin: auto;
+    padding: 5px 20px;
+    color: #eee8aa;
+    font-size: 20px;
+   
+}
+
+
+
+div.nome input, .email input, .telefone input{
+    padding: 5px;
+}
+
+
+.interesse_cidade{
+    grid-area: interesse_cidade ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interesse_cidade .opcoes label{
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+
+.interesse_cidade .opcoes  #estudante, #turista {
+    margin-right: 80px;
+}
+
+.nascimento{
+    grid-area: nascimento;
+    display: flex;
+    justify-content: space-around;
+}
+
+.data input{
+    display: block;
+    margin: 0 auto 10px;
+   
+    
+}
+
+.idade{
+    text-align: left;
+}
+
+.interesse_local{
+    grid-area: interesse_local;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+div.confirmando{
+    grid-area: cadastro;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+div.confirmando button{
+    padding: 10px  30px;   
+}
