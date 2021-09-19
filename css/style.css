@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Archivo+Black&display=swap');
+
+/* ======== Global ========== */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.margin{
+    margin-top: 8px;
+}
+
+
+/* ======= Variaveis ====== */
+:root{
+    --title-font: 'Lobster', cursive, sans-serif;
+    --text-font: 'Pacifico', cursive;
+    --text-font-alternative: 'Archivo Black', sans-serif;
+    --text-shadow: 8px 7px 12px black;
+}
+
+
+
+/* ======== BODY========== */
+
+body{
+    background-image: url(../img/wallpaper.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    animation: visivel 1.5s forwards;
+}
+
+
+@keyframes visivel{
+    0% {opacity: 0.1 ;}
+    10% {opacity: 0.2;}
+    20% {opacity: 0.3 ;}
+    30% {opacity: 0.4;}
+    40% {opacity: 0.5 ;}
+    50% {opacity: 0.6;}
+    60% {opacity: 0.7 ;}
+    70% {opacity: 0.8;}
+    80% {opacity: 0.9 ;}
+    100% {opacity: 1;} 
+    
+}
+
+
+/* ======== Header ========== */
+
+header{
+    display: inline-block; 
+
+}
+
+
+
+header h1{
+    padding: 20px 0;
+    font-size: 50px;
+    font-family: var(--title-font) ;
+    background: linear-gradient(
+    270.97deg, #FFE580 -21.36%, #1dc03b -2.45%, #110bd3 26.84%, #f71403 64.15%, #f6f20a 108.29%, #07d114 159.03%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 215px;
+}
+
+
+/* ======== Main ========== */
+
+
+p{
+    
+    width: 67%;
+    font-family: var(--title-font);
+    font-size: 23px;
+    margin: auto;
+    color: palegoldenrod;
+    text-shadow: var(--text-font-alternative);
+}
+
+iframe.margin{
+    width: 1280px;
+    height: 720px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 7px;
+    margin-top: 23px;
+}
+/* ======== Curiosidades ========== */
+
+
+section.curiosidades h2{
+    color: #78ff09;
+    text-shadow: var(--text-shadow);
+    font-family: var(--text-font-alternative);
+}
+
+section.curiosidades ul{
+    list-style: none;
+    text-align: center;
+    line-height: 30px;
+    color: palegoldenrod;
+    font-family: var(--text-font-alternative);
+    text-shadow: 5px 5px 10px  black;
+}
+
+
+
+
+/* ======== Footer ========== */
+
+
+footer{
+    background: rgba(54, 43, 43, 0.61);
+    padding-top: 5px;
+    
+    
+}
+
+footer a {
+    margin-left: 50px;
+}
+
+
+footer img {
+    width: 33px;
+    transition: transform 0.3s;
+}
+
+footer img:hover{
+    transform: scale(1.12);
+}
+
