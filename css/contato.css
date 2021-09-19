@@ -49,7 +49,7 @@ header h1 {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* width: 215px; */
+  width: 215px
 }
 
 header a {
@@ -80,6 +80,7 @@ form {
     'nascimento nascimento nascimento'
     'interesse_local interesse_local interesse_local'
     'cadastro cadastro cadastro';
+    text-shadow: 0 0 4px black;
 }
 
 .contato {
@@ -109,6 +110,7 @@ div.nome input,
 .telefone input {
   padding: 5px;
   transition: transform 0.3s;
+  
 }
 
 input[type='date'],
@@ -182,18 +184,29 @@ button {
 }
 
 button[type='reset'] {
-  background-color: #a8a4a4;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #f80a1eec;
+  color: white;
 }
 
 button[type='reset']:hover {
-  background-color: #858282;
+  background-color: #f80a1eec;
 }
 
 button[type='submit'] {
-  background-color: #477be3;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #345ad8;
   color: #f2f2f2;
 }
 
 button[type='submit']:hover {
   background-color: #345ad8;
+}
+
+button[type='submit']:active {
+  opacity: 0.7;
+}
+
+button[type='reset']:active {
+  opacity: 0.7;
 }
