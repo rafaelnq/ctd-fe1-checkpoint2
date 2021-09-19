@@ -4,10 +4,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --title-font: 'Lobster', cursive, sans-serif;
+  --text-font: 'Pacifico', cursive;
+  --text-font-alternative: 'Archivo Black', sans-serif;
+  --text-shadow: 8px 7px 12px black;
+}
+
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: url(../img/wallpaper.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -18,11 +22,47 @@ body {
   text-align: center;
   font-family: 'Archivo Black', sans-serif;
   color: darkkhaki;
-  text-shadow: 0 0 5px black;
   overflow: hidden;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+header h1 {
+  padding: 20px 0;
+  font-size: 50px;
+  font-family: var(--title-font);
+  background: linear-gradient(
+    270.97deg,
+    #ffe580 -21.36%,
+    #1dc03b -2.45%,
+    #110bd3 26.84%,
+    #f71403 64.15%,
+    #f6f20a 108.29%,
+    #07d114 159.03%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* width: 215px; */
+}
+
+header a {
+  display: block;
+  margin: auto;
+  text-decoration: none;
+}
+
 main {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(120deg, #3a78f2, #f1a11f, #a41fc4);
   width: 800px;
   padding: 44px 19px;
